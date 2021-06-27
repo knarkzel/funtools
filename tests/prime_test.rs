@@ -11,16 +11,6 @@ fn primes_to_100() {
 }
 
 #[test]
-fn smallest_1000_primes() {
-    let valid = include_str!("primes.txt")
-        .split_whitespace()
-        .flat_map(|x| x.parse::<usize>())
-        .collect::<Vec<_>>();
-    let primes = Prime::new().take(1000).collect::<Vec<_>>();
-    assert_eq!(valid, primes);
-}
-
-#[test]
 fn last_prime_number_10000() {
     let valid = Some(9973); 
     let prime = Prime::new().take_while(|x| x < &10000).last();

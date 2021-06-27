@@ -1,3 +1,4 @@
+/// See [prime number](https://en.wikipedia.org/wiki/Prime_number) for more
 pub struct Prime {
     n: usize,
 }
