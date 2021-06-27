@@ -13,6 +13,7 @@ assert_eq!(first_hundred, primes);
 
 ```rust
 use funtools::Prime;
+
 let valid = Some(9973); 
 let prime = Prime::new().take_while(|x| x < &10000).last();
 assert_eq!(valid, prime);
