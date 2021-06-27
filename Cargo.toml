@@ -3,5 +3,11 @@ name = "funtools"
 version = "0.1.0"
 authors = ["Knarkzel <knarkzel@gmail.com>"]
 edition = "2018"
+license = "GPL-2.0"
+description = "a collection of fun iterators to tinker with."
+repository = "https://git.sr.ht/~knarkzel/funtools" 
+documentation = "https://docs.rs/funtools/"
+keywords = ["fun"]
+categories = ["algorithms"]
 
 [dependencies]
