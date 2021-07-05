@@ -1,10 +1,11 @@
-/// See [tribonacci sequence](https://proofwiki.org/wiki/Definition:Tribonacci_Sequence) for more
+/// See [tribonacci sequence](https://proofwiki.org/wiki/Definition:Tribonacci_Sequence) for more.
 pub struct Tribonacci {
     x: usize,
     y: usize,
     z: usize,
 }
 
+/// First numbers are following: [1, 2, 4, 7, 13, 24, 44, 81, ...]
 impl Tribonacci {
     pub fn new() -> Self {
         Self { x: 0, y: 1, z: 1 }

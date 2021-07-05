@@ -12,7 +12,7 @@ fn primes_to_100() {
 
 #[test]
 fn last_prime_number_10000() {
-    let valid = Some(9973); 
+    let valid = Some(9973);
     let prime = Prime::new().take_while(|x| x < &10000).last();
     assert_eq!(valid, prime);
 }
@@ -20,6 +20,9 @@ fn last_prime_number_10000() {
 #[test]
 fn ten_primes_after_9000() {
     let valid = vec![9001, 9007, 9011, 9013, 9029, 9041, 9043, 9049, 9059, 9067];
-    let primes = Prime::new().skip_while(|x| x < &9000).take(10).collect::<Vec<_>>();
+    let primes = Prime::new()
+        .skip_while(|x| x < &9000)
+        .take(10)
+        .collect::<Vec<_>>();
     assert_eq!(valid, primes);
 }

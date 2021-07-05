@@ -9,3 +9,6 @@ pub use fibonacci::Fibonacci;
 
 mod tribonacci;
 pub use tribonacci::Tribonacci;
+
+mod lucas;
+pub use lucas::Lucas;
