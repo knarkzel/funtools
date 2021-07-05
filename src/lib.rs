@@ -12,3 +12,6 @@ pub use tribonacci::Tribonacci;
 
 mod lucas;
 pub use lucas::Lucas;
+
+mod leonardo;
+pub use leonardo::Leonardo;
